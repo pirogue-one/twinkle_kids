@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+li {
+    list-style: none;
+}
+/*font-family: "Play", sans-serif;*/
+
+/*----общие повторяющиеся стили----*/
+.section {
+    padding: 0 6rem;
+}
+.radius-50 {
+    border-radius: 50px;
+}
+.text-20 {
+    font-size: 1.25rem;
+}
+.text-24 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+.text-30 {
+    font-size: 1.875rem;
+}
+.text-white {
+    color: #FFF;
+}
+.text-blue {
+    color: #85AFC8;
+}
+.text-orange {
+    color: #F6988F;
+}
+.text-green{
+    color: #5FA068;
+}
+.section-title {
+    font-size: 2.625rem;
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+}
+.btn {
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 0.875rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+}
+.orange-btn {
+    background-color: #F6988F;
+}
+.white-btn {
+    background-color: #FFFFFF;
+}
+.yellow-btn{
+    background-color: #EEB841;
+}
+.mar-bottom-50 {
+    margin-bottom: 3.125rem;
+}
+.mar-bottom-68 {
+    margin-bottom: 4.25rem;
+}
+.about,
+.advantages {
+    padding-block: 5rem;
+}
+
+/*-------header-------*/
+.hero-bg {
+    background-color: #FCD9C3FF;
+    border-radius: 0 0 50px 50px;
+}
+.header,
+.menu,
+.nav-btns {
+    display: flex;
+    align-items: center;
+}
+.header {
+    padding: 1.438rem 6rem;
+    justify-content: space-between;
+}
+.logo {
+    width: 140px;
+}
+.menu {
+    justify-content: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+}
+.menu-link {
+    font-weight: 600;
+}
+.nav-btns {
+   gap: 1rem
+}
+.header-btn {
+    padding-inline: 0.688rem;
+}
+.login-btn {
+    background-color: #85AFC8;
+    padding:0.563rem;
+}
+
+/*-------hero-------*/
+.hero {
+    padding-block: 3rem 6.375rem;
+}
+.hero-title {
+    font-family: "Play", sans-serif;
+    font-size: 3.75rem;
+    line-height: 3.75rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    margin-bottom: 4.375rem;
+}
+.hero-btn {
+    padding-inline: 1.625rem;
+}
+
+/*-------about-------*/
+.about {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+.about-text-wrapper,
+.advantages-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/*-------programs-------*/
+.programs {
+    background-color: #FCD9C3FF;
+    padding-block: 4.75rem 5rem;
+}
+.program-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2.188rem 2rem;
+    width: 100%;
+}
+.program-card-item {
+    position: relative;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.375rem;
+    flex: 0 0 23%;
+    padding: 1.625rem 1.5rem 2.688rem 1.5rem;
+    font-weight: 700;
+    font-family: "Play", sans-serif;
+    height: 182px;
+    min-width: 250px;
+}
+.program-card-subtitle {
+    font-size: 1rem;
+}
+.program-card-item>h3 {
+    text-transform: uppercase;
+}
+.program-card-shape {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    width: 50px;
+}
+.program-card-item-last {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 2.25rem;
+    padding-inline: 4rem;
+    max-width: 605px;
+}
+.program-btn{
+    padding-inline: 2.5rem;
+}
+
+/*-------advantages-------*/
+.advantages {
+    padding-right: 0;
+    display: flex;
+    align-items: center;
+    gap: 4.625rem;
+}
+
+/*-------form-------*/
+.form {
+    background-color: #85AFC8;
+}
