@@ -25,6 +25,7 @@ li {
 }
 .text-20 {
     font-size: 1.25rem;
+    line-height: 150%;
 }
 .text-24 {
     font-size: 1.5rem;
@@ -83,6 +84,8 @@ li {
 .hero-bg {
     background-color: #FCD9C3FF;
     border-radius: 0 0 50px 50px;
+    background-image: url(../images/bg.png);
+    background-size: cover;
 }
 .header,
 .menu,
@@ -112,8 +115,13 @@ li {
     padding-inline: 0.688rem;
 }
 .login-btn {
-    background-color: #85AFC8;
-    padding:0.563rem;
+    /* background-color: #85AFC8;
+    padding:0.563rem; */
+    font-size: 0;
+}
+
+.login-btn-img {
+    width: 48px;
 }
 
 /*-------hero-------*/
@@ -133,6 +141,10 @@ li {
     padding-inline: 1.625rem;
 }
 
+.hero-img {
+    width: 295px;
+}
+
 /*-------about-------*/
 .about {
     display: flex;
@@ -150,6 +162,8 @@ li {
 .programs {
     background-color: #FCD9C3FF;
     padding-block: 4.75rem 5rem;
+    background-image: url(../images/bg-pink.png);
+    background-size: cover;
 }
 .program-cards {
     display: flex;
@@ -181,8 +195,8 @@ li {
 }
 .program-card-shape {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 10%;
+    right: 12%;
     z-index: 1;
     width: 50px;
 }
@@ -208,7 +222,15 @@ li {
     gap: 4.625rem;
 }
 
+.advantages-img {
+    width: 629px;
+}
+
 /*-------form-------*/
 .form {
     background-color: #85AFC8;
+}
+
+.form-img {
+    width: 267px;
 }
