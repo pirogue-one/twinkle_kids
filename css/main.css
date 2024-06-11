@@ -4,55 +4,69 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
+
 a,
-button{
+button {
     text-decoration: none;
     cursor: pointer;
 }
+
 body {
     max-width: 1440px;
     margin: 0 auto;
 }
+
 li {
     list-style: none;
 }
+
 /*font-family: "Play", sans-serif;*/
 
 /*----общие повторяющиеся стили----*/
 .section {
     padding: 0 6rem;
 }
+
 .radius-50 {
     border-radius: 50px;
 }
+
 .text-20 {
     font-size: 1.25rem;
     line-height: 150%;
 }
+
 .text-24 {
     font-size: 1.5rem;
     line-height: 1.5rem;
 }
+
 .text-30 {
     font-size: 1.875rem;
 }
+
 .text-white {
     color: #FFF;
 }
+
 .text-blue {
     color: #85AFC8;
 }
+
 .text-orange {
     color: #F6988F;
 }
-.text-green{
+
+.text-green {
     color: #5FA068;
 }
+
 .section-title {
     font-size: 2.625rem;
     font-family: "Play", sans-serif;
     font-weight: 700;
 }
+
 .btn {
     border: none;
     outline: none;
@@ -62,60 +76,93 @@ li {
     font-weight: 600;
     font-family: "Inter", sans-serif;
 }
+
 .orange-btn {
     background-color: #F6988F;
 }
+
 .white-btn {
     background-color: #FFFFFF;
 }
-.yellow-btn{
+
+.yellow-btn {
     background-color: #EEB841;
 }
+
 .mar-bottom-50 {
     margin-bottom: 3.125rem;
 }
+
 .mar-bottom-68 {
     margin-bottom: 4.25rem;
 }
+
 .about,
 .advantages {
     padding-block: 5rem;
 }
 
 /*-------header-------*/
+
+/* burger */
+
+.modal_menu {
+    flex-direction: column;
+    display: flex;
+}
+
+#menu-burger {
+    cursor: pointer;
+    display: none;
+    width: 30px;
+}
+
+.modal_menu-container {
+    display: none;
+}
+
 .hero-bg {
     background-color: #FCD9C3FF;
     border-radius: 0 0 50px 50px;
     background-image: url(../images/bg.png);
     background-size: cover;
 }
+
 .header,
-.menu,
 .nav-btns {
     display: flex;
     align-items: center;
 }
+
 .header {
     padding: 1.438rem 6rem;
     justify-content: space-between;
 }
+
 .logo {
     width: 140px;
 }
+
 .menu {
     justify-content: center;
     gap: 1.25rem;
     flex-wrap: wrap;
+    display: flex;
+    align-items: center;
 }
+
 .menu-link {
     font-weight: 600;
 }
+
 .nav-btns {
-   gap: 1rem
+    gap: 1rem
 }
+
 .header-btn {
     padding-inline: 0.688rem;
 }
+
 .login-btn {
     /* background-color: #85AFC8;
     padding:0.563rem; */
@@ -130,6 +177,7 @@ li {
 .hero {
     padding-block: 3rem 6.375rem;
 }
+
 .hero-title {
     font-family: "Play", sans-serif;
     font-size: 3.75rem;
@@ -139,9 +187,11 @@ li {
     text-transform: uppercase;
     margin-bottom: 4.375rem;
 }
+
 .hero-btn {
     padding-inline: 1.625rem;
 }
+
 .hero-img {
     width: 295px;
 }
@@ -152,8 +202,9 @@ li {
     align-items: center;
     gap: 2.5rem;
 }
+
 .about-text-wrapper,
-.advantages-text-wrapper{
+.advantages-text-wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -166,6 +217,7 @@ li {
     background-image: url(../images/bg-pink.png);
     background-size: cover;
 }
+
 .program-cards {
     display: flex;
     flex-wrap: wrap;
@@ -174,6 +226,7 @@ li {
     gap: 2.188rem 2rem;
     width: 100%;
 }
+
 .program-card-item {
     position: relative;
     background-color: #FFFFFF;
@@ -188,12 +241,15 @@ li {
     height: 182px;
     min-width: 250px;
 }
+
 .program-card-subtitle {
     font-size: 1rem;
 }
+
 .program-card-item>h3 {
     text-transform: uppercase;
 }
+
 .program-card-shape {
     position: absolute;
     bottom: 10%;
@@ -201,6 +257,7 @@ li {
     z-index: 1;
     width: 50px;
 }
+
 .program-card-item-last {
     display: flex;
     flex-direction: column;
@@ -211,7 +268,8 @@ li {
     padding-inline: 4rem;
     max-width: 600px;
 }
-.program-btn{
+
+.program-btn {
     padding-inline: 2.5rem;
 }
 
@@ -224,25 +282,31 @@ li {
     flex-wrap: wrap;
     justify-content: center;
 }
-.advantages-text-wrapper{
+
+.advantages-text-wrapper {
     flex: 1 0 47%;
 }
+
 .advantages-img {
     max-width: 629px;
 }
-.advantages-img img{
+
+.advantages-img img {
     width: 100%;
 }
+
 .accordions-container,
-.accordion-item{
+.accordion-item {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
 }
-.accordions-container{
+
+.accordions-container {
     gap: 1.313rem;
 }
-.accordion-item{
+
+.accordion-item {
     position: relative;
     padding-left: 6.875rem;
     gap: 1rem;
@@ -251,16 +315,18 @@ li {
 
 .accordion-arrow {
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     z-index: 1;
     width: 50px;
     transition: all 0.3s;
 }
-.accordion-header{
+
+.accordion-header {
     font-family: "Play", sans-serif;
 }
-.accordion-body{
+
+.accordion-body {
     max-height: 0;
     overflow: hidden;
     transition: all 0.3s ease-out;
@@ -275,38 +341,46 @@ li {
     margin-bottom: 5rem;
 
 }
-.form-wrapper{
+
+.form-wrapper {
     display: flex;
     justify-content: space-between;
 }
+
 .form-col-text,
-.form-col-form{
+.form-col-form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-.form-col-text{
+
+.form-col-text {
     flex: 1 1 45%;
 }
+
 .form-col-text p {
     max-width: 533px;
 }
+
 .form-img {
     padding-top: 2rem;
     max-width: 267px;
 }
-.form-col-form{
+
+.form-col-form {
     flex: 0 1 43%;
     margin-left: 2rem;
     gap: 1.375rem;
 }
+
 .input-row {
     display: flex;
     width: 100%;
     gap: 3.75rem;
     align-items: center;
 }
-.form-input{
+
+.form-input {
     outline: none;
     background-color: transparent;
     border: none;
@@ -316,11 +390,13 @@ li {
     line-height: 1.625rem;
     flex: 1 1 40%;
 }
+
 .form-input::placeholder {
     color: rgba(255, 255, 255, 0.5);
     line-height: 1.625rem;
     font-size: 1rem;
 }
+
 /* Customize the label (the container) */
 .checkbox-wrapper {
     display: block;
@@ -332,6 +408,7 @@ li {
     -ms-user-select: none;
     user-select: none;
 }
+
 /* Hide the browser's default checkbox */
 .checkbox-wrapper input {
     position: absolute;
@@ -342,6 +419,7 @@ li {
     height: 18px;
     width: 18px;
 }
+
 /* Create a custom checkbox */
 .checkmark {
     position: absolute;
@@ -352,6 +430,7 @@ li {
     cursor: pointer;
     border: 1px solid #FFFFFF;
 }
+
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark::after {
     content: "\2713";
@@ -364,14 +443,17 @@ li {
     position: absolute;
     display: none;
 }
+
 /* Show the checkmark when checked */
-.checkbox-wrapper input:checked ~ .checkmark::after {
+.checkbox-wrapper input:checked~.checkmark::after {
     display: block;
 }
-.checkbox-wrapper a{
+
+.checkbox-wrapper a {
     color: #FFFFFF;
     text-decoration: underline;
 }
+
 .form-col-form button {
     color: #85AFC8;
     padding-inline: 2.375rem;
@@ -379,7 +461,7 @@ li {
 }
 
 /*-----footer------*/
-.footer{
+.footer {
     background-color: #F8F8F8;
     border-radius: 50px 50px 0 0;
     padding: 5rem 6rem;
@@ -387,38 +469,51 @@ li {
     flex-direction: column;
     gap: 2.125rem;
 }
-.footer-row{
+
+.footer-row {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.footer-contacts{
+
+.footer-contacts {
     font-weight: 700;
 }
-.footer-contacts li:first-child{
+
+.footer-contacts li:first-child {
     padding-bottom: 0.625rem;
 }
-.menu-footer{
+
+.menu-footer {
     flex: 0 1 50%;
     gap: 0 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
 }
+
 .menu-footer li {
     flex: 1 1 30%;
 }
+
 .company {
     font-size: 1rem;
     font-weight: 500;
 }
-.designedby{
+
+.designedby {
     display: flex;
     justify-content: space-between;
     width: 16%;
 }
-.designedby{
+
+.designedby {
     font-weight: 500;
 }
+
 .designedby img {
     width: 36px;
 }

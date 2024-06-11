@@ -20,3 +20,19 @@ accordionItems.forEach(accordionItem => {
 
     });
 });
+
+// modal 
+
+//menu - hamburger
+
+const closeBtn = document.querySelector('#close');
+const modalMenu = document.querySelector('.modal_menu-container');
+const mobMenu = document.querySelector('#menu-burger');
+
+mobMenu.addEventListener('click', () => {
+    modalMenu.style.display = 'flex';
+});
+
+closeBtn.addEventListener('click', () => {
+    modalMenu.style.display = 'none';
+})
