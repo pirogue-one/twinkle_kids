@@ -56,7 +56,7 @@
     .modal_menu-container {
         height: 100%;
         width: 100%;
-        z-index: 20;
+        z-index: 10;
         background-color: rgbA(61, 59, 60, 0.8);
         display: none;
         position: fixed;
@@ -98,8 +98,7 @@
         display: none;
     }
 
-    .footer-row-mob,
-    .footer-row {
+    .footer-row-mob {
         flex-direction: column;
         gap: 2rem;
     }
@@ -107,6 +106,16 @@
     .designedby {
         gap: 0.7rem;
         justify-content: center;
+        width: unset;
+    }
+
+    .company,
+    .text-blue {
+        font-size: 0.8rem;
+    }
+
+    .designedby img {
+        width: 30px;
     }
 
     .nav-btns-hidden {
@@ -142,6 +151,10 @@
         padding-inline: 1rem;
     }
 
+    .header {
+        padding-block: 1.25rem;
+    }
+
     .hero-title {
         font-size: 2.1rem;
         line-height: 2.4rem;
@@ -172,10 +185,6 @@
         width: 100%;
     }
 
-    .footer-row {
-        flex-direction: column;
-    }
-
     .program-card-item {
         flex: 0 0 80%;
     }
@@ -198,5 +207,9 @@
 
     .advantages {
         gap: 2.625rem;
+    }
+
+    .logo {
+        width: 100px;
     }
 }

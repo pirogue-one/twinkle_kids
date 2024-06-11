@@ -137,6 +137,16 @@ li {
 .header {
     padding: 1.438rem 6rem;
     justify-content: space-between;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    transition: all .2s ease;
+}
+
+.header.fixed {
+    position: fixed;
+    transform: translateY(100px);
 }
 
 .logo {
@@ -153,6 +163,16 @@ li {
 
 .menu-link {
     font-weight: 600;
+}
+
+.nav-one:hover,
+.nav-two:hover,
+.nav-three:hover,
+.nav-four:hover,
+.nav-five:hover,
+.nav-six:hover,
+.menu-link:hover {
+    color: #F6988F !important;
 }
 
 .nav-btns {
@@ -240,6 +260,11 @@ li {
     font-family: "Play", sans-serif;
     height: 182px;
     min-width: 250px;
+    cursor: pointer;
+}
+
+.program-card-item:hover {
+    background-color: #F8F8F8;
 }
 
 .program-card-subtitle {
@@ -495,6 +520,10 @@ li {
     align-items: center;
 }
 
+.menu-footer-link:hover {
+    color: #F6988F;
+}
+
 .menu-footer li {
     flex: 1 1 30%;
 }
@@ -516,4 +545,25 @@ li {
 
 .designedby img {
     width: 36px;
+}
+
+
+
+/******** ПРОГРАМММЫ ОБЩАЯ *********/
+
+.pink-btn {
+    background-color: #F6988F;
+}
+
+.bg-white {
+    background-color: #FFFFFF !important;
+    background-image: none;
+}
+
+.bg-grey {
+    background-color: rgba(248, 248, 248, 1);
+}
+
+.program-card-item-btns {
+    display: flex;
 }
