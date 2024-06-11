@@ -98,7 +98,8 @@
         display: none;
     }
 
-    .footer-row-mob, .footer-row {
+    .footer-row-mob,
+    .footer-row {
         flex-direction: column;
         gap: 2rem;
     }
@@ -173,5 +174,28 @@
 
     .footer-row {
         flex-direction: column;
+    }
+
+    .program-card-item {
+        flex: 0 0 80%;
+    }
+
+    .about,
+    .advantages,
+    .form {
+        padding-block: 3rem;
+    }
+
+    .mar-bottom-68,
+    .form {
+        margin-bottom: 2.25rem;
+    }
+
+    .programs {
+        padding-block: 3rem;
+    }
+
+    .advantages {
+        gap: 2.625rem;
     }
 }
