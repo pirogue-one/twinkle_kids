@@ -48,6 +48,7 @@ const navThree = document.querySelector('.nav-three');
 const navFour = document.querySelector('.nav-four');
 const navFive = document.querySelector('.nav-five');
 const navSix = document.querySelector('.nav-six');
+const height = document.querySelector('.modal_menu-container')
 
 document.onscroll = function () {
 
@@ -63,6 +64,7 @@ document.onscroll = function () {
         navFour.style.color = '#85AFC8';
         navFive.style.color = '#85AFC8';
         navSix.style.color = '#85AFC8';
+        height.style.height = '100vh'
     }
 
     else {
