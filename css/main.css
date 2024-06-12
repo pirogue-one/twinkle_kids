@@ -435,6 +435,7 @@ li {
     font-size: 1rem;
     line-height: 1.625rem;
     flex: 1 1 40%;
+    border-radius: 0;
 }
 
 .form-input::placeholder {
