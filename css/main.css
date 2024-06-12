@@ -125,6 +125,7 @@ li {
 .modal_menu {
     flex-direction: column;
     display: flex;
+    justify-content: center;
 }
 
 #menu-burger {
