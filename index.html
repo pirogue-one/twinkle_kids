@@ -249,11 +249,22 @@
                                 <span class="checkmark-radio"></span>
                             </label>
                         </div>
-                        <select name="list" id="list-select" class="form-input">
-                            <option class="checkbox-link" value="">Выпадающий список:</option>
-                            <option class="checkbox-link" value="var-1">Вариант select1</option>
-                            <option class="checkbox-link" value="var-2">Вариант select1</option>
-                        </select>
+                        <div class="custom-select">
+                            <div class="select-button" role="combobox" aria-labelledby="select button"
+                                aria-haspopup="listbox" aria-expanded="false" aria-controls="select-dropdown">
+                                <span class="selected-value">Выпадающий список</span>
+                            </div>
+                            <ul class="select-dropdown" role="listbox" id="select-dropdown">
+                                <li role="option">
+                                    <input type="radio" id="1" name="select" />
+                                    <label for="1">Вариант 1</label>
+                                </li>
+                                <li role="option">
+                                    <input type="radio" id="2" name="select" />
+                                    <label for="2">Вариант 2</label>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="input-row textarea-wrapper">
                         <textarea type="text" name="text" rows="3" class="form-input"
@@ -267,7 +278,7 @@
                             пользовательского соглашения</a>
                         <span class="checkmark"></span>
                     </label>
-                    <button href="/" class="btn white-btn">Отправить заявку</button>
+                    <button type="submit" href="/" class="btn white-btn form-btn">Отправить заявку</button>
                 </form>
             </div>
         </section>

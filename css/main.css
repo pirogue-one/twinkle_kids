@@ -501,7 +501,7 @@ li {
     text-decoration: underline;
 }
 
-.form-col-form button {
+.form-col-form .form-btn {
     color: #85AFC8;
     padding-inline: 2.375rem;
     width: fit-content;
@@ -591,8 +591,101 @@ textarea.form-input {
     height: 14px;
     border-radius: 50%;
     background: #FFFFFF;
-    transform: translateX(-53%) translateY(-53%);
+    transform: translateX(-50%) translateY(-50%);
 }
+
+.custom-select {
+    position: relative;
+    max-width: 100%;
+    flex: 1 1 40%;
+    font-size: 1rem;
+    color: #000;
+    /* margin-top: 2.75rem; */
+  }
+  
+  .select-button {
+    width: 100%;
+    font-size: 1rem;
+    color: #FFF;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-right: 2rem;
+  }
+  
+  .selected-value {
+    text-align: left;
+  }
+  
+  .select-button::after {
+    position: absolute;
+    content: '\25BD';
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    right: 0;
+    top: 0;
+    transform-origin: center;
+  }
+  
+  .select-dropdown {
+    position: absolute;
+    list-style: none;
+    width: 100%;
+    background-color: #85AFC8;
+    margin-top: 8px;
+    max-height: 200px;
+    overflow-y: auto;
+    transition: 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .select-dropdown li {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: #FFF;
+  }
+  
+  .select-dropdown li label {
+    width: 100%;
+    padding: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .select-dropdown input:checked ~ label {
+    border: 1px solid #FFF;
+    border-radius: 8px;
+  }
+  
+  .select-dropdown input[type="radio"] {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+  }
+  
+  /* interactivity */
+  .custom-select.active .select-button::after{
+    transform: rotate(180deg);
+  }
+  
+  .custom-select.active .select-dropdown {
+    opacity: 1;
+    visibility: visible;
+  }
 
 /*-----footer------*/
 .footer {
