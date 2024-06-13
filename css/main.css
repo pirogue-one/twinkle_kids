@@ -76,6 +76,7 @@ li {
     font-size: 1rem;
     font-weight: 600;
     font-family: "Inter", sans-serif;
+    text-align: center;
 }
 
 .orange-btn {
@@ -757,10 +758,6 @@ textarea.form-input {
 
 /******** ПРОГРАМММЫ ОБЩАЯ *********/
 
-.pink-btn {
-    background-color: #F6988F;
-}
-
 .bg-white {
     background-color: #FFFFFF !important;
     background-image: none;
@@ -772,4 +769,12 @@ textarea.form-input {
 
 .program-card-item-btns {
     display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    padding-top: 4.063rem;
+    flex-wrap: wrap;
+}
+
+.width-300 {
+    width: 300px;
 }
