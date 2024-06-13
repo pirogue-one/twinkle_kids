@@ -905,7 +905,7 @@ textarea.form-input {
 }
 
 .slider-cards {
-    padding-block: 2.5rem;
+    padding-bottom: 5rem;
 }
 
 .swiper-docs,
@@ -919,40 +919,7 @@ textarea.form-input {
 }
 
 .docs-button-next,
-.docs-button-prev {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-self: stretch;
-    background-color: #FFF;
-    z-index: 2;
-    cursor: pointer;
-}
-
-.swiper-wrapper-docs {
-    width: 87% !important;
-}
-
-.slider-docs-img {
-    max-width: 288px;
-}
-
-.swiper-slide-docs {
-    width: calc(27% - 39px) !important;
-    height: unset !important;
-    margin-right: 32px;
-}
-
-.swiper-wrapper-partners {
-    width: 89% !important;
-}
-
-.swiper-slide-partners {
-    width: calc(27% - 39px) !important;
-    height: unset !important;
-    margin-right: 32px;
-}
-
+.docs-button-prev,
 .partners-button-next,
 .partners-button-prev {
     display: flex;
@@ -962,4 +929,29 @@ textarea.form-input {
     background-color: #FFF;
     z-index: 2;
     cursor: pointer;
+}
+.docs-button-prev,
+.partners-button-prev{
+    padding-right: 2.875rem;
+}
+.docs-button-next,
+.partners-button-next{
+    padding-left: 2.875rem;
+}
+
+.slider-docs-img,
+.swiper-slide-partners img{
+    width: 100%;
+}
+
+.swiper-slide-docs{
+    width: calc(25% - 24px);
+    height: unset !important;
+    margin-right: 32px;
+}
+
+.swiper-slide-partners{
+    width: 25%;
+    height: unset !important;
+    padding-inline: 40px;
 }
