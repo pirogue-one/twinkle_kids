@@ -255,6 +255,20 @@
     .designedby p {
         max-width: 70px;
     }
+    .custom-select-filter>.select-button{
+        font-size: 0.75rem;
+    }
+    .custom-select-filter, .filter-form>.filter-btn{
+        flex: 0 1 12%;
+        max-width: 98px;
+        min-width: 95px;
+    }
+    .custom-select-filter>.select-button::after{
+        font-size: 1rem;
+    }
+    .custom-select-filter>.select-button{
+        padding: 0.25rem;
+    }
 }
 
 @media (max-width: 376px) {

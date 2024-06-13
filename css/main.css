@@ -801,7 +801,7 @@ textarea.form-input {
     border-bottom: 1px solid #FFFFFF;
     padding: 0.5rem;
 }
-.custom-select-filter, .filter-btn{
+.custom-select-filter, .filter-form>.filter-btn{
     min-width: 140px;
     flex: 0 1 14.5%;
 }
