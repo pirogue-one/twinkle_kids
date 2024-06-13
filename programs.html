@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Программы - Twinkle Kids</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./script.js"></script>
+</head>
+
+<body>
+<header class="header header-fixed">
+    <a href="./index.html"><img class="logo" src="./images/logo.png" alt="Логотип"></a>
+    <ul class="menu">
+        <li><a class="menu-link text-20 text-blue nav-one">О Центре</a></li>
+        <li><a class="menu-link text-20 text-orange nav-two" href="./programs.html">Образование</a></li>
+        <li><a class="menu-link text-20 text-blue nav-three">Расписание</a></li>
+        <li><a class="menu-link text-20 text-blue nav-four">Команда</a></li>
+        <li><a class="menu-link text-20 text-blue nav-five">Контакты</a></li>
+        <li><a class="menu-link text-20 text-blue nav-six">+7&nbsp;(495)&nbsp;431-53-17</a></li>
+    </ul>
+    <div class="nav-btns nav-btns-hidden">
+        <a href="/" class="btn orange-btn header-btn text-white">Подать заявку</a>
+        <a href="/" class="login-btn"><img class="login-btn-img" src="./images/auth_button.png"
+                                           alt="иконка входа"></a>
+    </div>
+    <div id="menu-burger">
+        <img src="./images/menu-burger.png" alt="бургер меню">
+    </div>
+    <div class="modal_menu-container">
+        <div class="modal_menu">
+            <ul class="close-btn">
+                <li id="close"><img src="./images/close-btn.png" class="modal-btn-back"></li>
+            </ul>
+            <ul class="menu-mob">
+                <li><a class="menu-link text-20 text-white">О Центре</a></li>
+                <li><a class="menu-link text-20 text-orange" href="./programs.html">Образование</a></li>
+                <li><a class="menu-link text-20 text-white">Расписание</a></li>
+                <li><a class="menu-link text-20 text-white">Команда</a></li>
+                <li><a class="menu-link text-20 text-white">Контакты</a></li>
+                <li><a class="menu-link text-20 text-white">+7&nbsp;(495)&nbsp;431-53-17</a></li>
+            </ul>
+            <div class="nav-btns">
+                <a href="/" class="btn orange-btn header-btn text-white">Подать заявку</a>
+                <a href="/" class="login-btn"><img class="login-btn-img" src="./images/auth_button.png"
+                                                   alt="иконка входа"></a>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="section about">
+        <div class="about-text-wrapper">
+            <h2 class="section-title text-blue mar-bottom-50">ОБРАЗОВАТЕЛЬНЫЕ ПРОГРАММЫ</h2>
+            <p class="text-20">Краткий вводный текст о программах до 250 символов… какой-то текст… какой-то текст…
+                какой-то текст… какой-то текст… какой-то текст… какой-то текст… какой-то текст… какой-то текст…
+                какой-то текст… какой-то текст… какой-то текст… какой-то текст… какой-то текст…</p>
+        </div>
+    </section>
+    <section class="section filter radius-50">
+        <form class="filter-form">
+                <div class="custom-select custom-select-filter">
+                    <div class="select-button" role="combobox" aria-labelledby="select button"
+                         aria-haspopup="listbox"
+                         aria-expanded="false" aria-controls="select-dropdown">
+                        <span class="selected-value">Возраст</span>
+                    </div>
+                    <ul class="select-dropdown" role="listbox" id="select-age">
+                        <li role="option">
+                            <input type="radio" id="age-1" name="age"/>
+                            <label for="1">Вариант 1</label>
+                        </li>
+                        <li role="option">
+                            <input type="radio" id="age-2" name="age"/>
+                            <label for="2">Вариант 2</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="custom-select custom-select-filter">
+                    <div class="select-button" role="combobox" aria-labelledby="select button"
+                         aria-haspopup="listbox"
+                         aria-expanded="false" aria-controls="select-dropdown">
+                        <span class="selected-value">Тип занятий</span>
+                    </div>
+                    <ul class="select-dropdown" role="listbox" id="select-type">
+                        <li role="option">
+                            <input type="radio" id="type-1" name="time"/>
+                            <label for="1">Вариант 1</label>
+                        </li>
+                        <li role="option">
+                            <input type="radio" id="type-2" name="time"/>
+                            <label for="2">Вариант 2</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="custom-select custom-select-filter">
+                    <div class="select-button" role="combobox" aria-labelledby="select button"
+                         aria-haspopup="listbox"
+                         aria-expanded="false" aria-controls="select-dropdown">
+                        <span class="selected-value">Время</span>
+                    </div>
+                    <ul class="select-dropdown" role="listbox" id="select-time">
+                        <li role="option">
+                            <input type="radio" id="time-1" name="time"/>
+                            <label for="1">Вариант 1</label>
+                        </li>
+                        <li role="option">
+                            <input type="radio" id="time-2" name="time"/>
+                            <label for="2">Вариант 2</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="custom-select custom-select-filter">
+                    <div class="select-button" role="combobox" aria-labelledby="select button"
+                         aria-haspopup="listbox"
+                         aria-expanded="false" aria-controls="select-price">
+                        <span class="selected-value">Стоимость, Р</span>
+                    </div>
+                    <ul class="select-dropdown" role="listbox" id="select-dropdown">
+                        <li role="option">
+                            <input type="radio" id="price-1" name="price"/>
+                            <label for="1">Вариант 1</label>
+                        </li>
+                        <li role="option">
+                            <input type="radio" id="price-2" name="price"/>
+                            <label for="2">Вариант 2</label>
+                        </li>
+                    </ul>
+                </div>
+            <button type="submit" href="/" class="btn filter-btn white-btn text-green">Применить</button>
+        </form>
+    </section>
+    <section class="section programs bg-white">
+        <div class="program-cards">
+            <div class="program-card-item radius-50 bg-grey">
+                <p class="program-card-subtitle">Дети от 1,5 лет</p>
+                <h3 class="text-24">Логопед</h3>
+                <img src="./images/img1.png" alt="Абстрактная фигура" class="program-card-shape">
+            </div>
+            <div class="program-card-item radius-50 bg-grey">
+                <p class="program-card-subtitle">Дети от 2 лет</p>
+                <h3 class="text-24">Раннее</br>развитие</h3>
+                <img src="./images/img2.png" alt="Абстрактная фигура" class="program-card-shape">
+            </div>
+            <div class="program-card-item radius-50 bg-grey">
+                <p class="program-card-subtitle">Дети 2-4 года</p>
+                <h3 class="text-24">Английский</br>язык</h3>
+                <img src="./images/img3.png" alt="Абстрактная фигура" class="program-card-shape">
+            </div>
+            <div class="program-card-item radius-50 bg-grey">
+                <p class="program-card-subtitle">Дети 2-4 года</p>
+                <h3 class="text-24">Китайский</br>язык</h3>
+                <img src="./images/img4.png" alt="Абстрактная фигура" class="program-card-shape">
+            </div>
+            <div class="program-card-item radius-50 bg-grey">
+                <p class="program-card-subtitle">Дети от 3 лет</p>
+                <h3 class="text-24">Занятие</br>с&nbsp;психологом</h3>
+                <img src="./images/img5.png" alt="Абстрактная фигура" class="program-card-shape">
+            </div>
+            <div class="program-card-item radius-50 bg-grey">
+                <p class="program-card-subtitle">Дети от 3,5 лет</p>
+                <h3 class="text-24">Подготовка</br>к&nbsp;школе</h3>
+                <img src="./images/img6.png" alt="Абстрактная фигура" class="program-card-shape">
+            </div>
+            <div class="program-card-item radius-50 bg-grey">
+                <p class="program-card-subtitle">Дети 3,5-7 лет</p>
+                <h3 class="text-24">Живопись</h3>
+                <img src="./images/img7.png" alt="Абстрактная фигура" class="program-card-shape">
+            </div>
+            <div class="program-card-item radius-50 bg-grey">
+                <p class="program-card-subtitle">Дети 3,5-5 лет</p>
+                <h3 class="text-24">Музыка</h3>
+                <img src="./images/img8.png" alt="Абстрактная фигура" class="program-card-shape">
+            </div>
+            <div class="program-card-item radius-50 bg-grey">
+                <p class="program-card-subtitle">Дети от 3,5 лет</p>
+                <h3 class="text-24">Английский<br>язык<br>с&nbsp;носителем</h3>
+                <img src="./images/img9.png" alt="Абстрактная фигура" class="program-card-shape">
+            </div>
+            <div class="program-card-item radius-50 bg-grey">
+                <p class="program-card-subtitle">Дети 3,5-5 лет</p>
+                <h3 class="text-24">Английский</br>язык</h3>
+                <img src="./images/img15.png" alt="Абстрактная фигура" class="program-card-shape">
+            </div>
+            <div class="program-card-item radius-50 bg-grey">
+                <p class="program-card-subtitle">Дети 3,5-5 лет</p>
+                <h3 class="text-24">Мини-футбол</h3>
+                <img src="./images/img10.png" alt="Абстрактная фигура" class="program-card-shape">
+            </div>
+            <div class="program-card-item radius-50 bg-grey">
+                <p class="program-card-subtitle">Дети 4-8 лет</p>
+                <h3 class="text-24">Робототехника</h3>
+                <img src="./images/img12.png" alt="Абстрактная фигура" class="program-card-shape">
+            </div>
+            <div class="program-card-item radius-50 bg-grey">
+                <p class="program-card-subtitle">Дети 4-5 лет</p>
+                <h3 class="text-24">Мышематика</h3>
+                <img src="./images/img13.png" alt="Абстрактная фигура" class="program-card-shape">
+            </div>
+            <div class="program-card-item radius-50 bg-grey">
+                <p class="program-card-subtitle">Дети 4-5 лет</p>
+                <h3 class="text-24">Шахматы</h3>
+                <img src="./images/img14.png" alt="Абстрактная фигура" class="program-card-shape">
+            </div>
+            <div class="program-card-item radius-50 bg-grey">
+                <p class="program-card-subtitle">Дети от 4 лет</p>
+                <h3 class="text-24">Мозгошкола</h3>
+                <img src="./images/img16.png" alt="Абстрактная фигура" class="program-card-shape">
+            </div>
+            <div class="program-card-item radius-50 bg-grey">
+                <p class="program-card-subtitle">Дети 5-6 лет</p>
+                <h3 class="text-24">Китайский</br>язык</h3>
+                <img src="./images/img17.png" alt="Абстрактная фигура" class="program-card-shape">
+            </div>
+            <div class="program-card-item radius-50 bg-grey">
+                <p class="program-card-subtitle">Дети 5-7 лет</p>
+                <h3 class="text-24">Музыка</h3>
+                <img src="./images/img18.png" alt="Абстрактная фигура" class="program-card-shape">
+            </div>
+            <div class="program-card-item radius-50 bg-grey">
+                <p class="program-card-subtitle">Дети 5-7 лет</p>
+                <h3 class="text-24">Мини-футбол</h3>
+                <img src="./images/img19.png" alt="Абстрактная фигура" class="program-card-shape">
+            </div>
+            <div class="program-card-item radius-50 bg-grey">
+                <p class="program-card-subtitle">Дети 5-6 лет</p>
+                <h3 class="text-24">Мышематика</h3>
+                <img src="./images/img20.png" alt="Абстрактная фигура" class="program-card-shape">
+            </div>
+            <div class="program-card-item radius-50 bg-grey">
+                <p class="program-card-subtitle">Дети 6-7 лет</p>
+                <h3 class="text-24">Шахматы</h3>
+                <img src="./images/img21.png" alt="Абстрактная фигура" class="program-card-shape">
+            </div>
+        </div>
+        <div class="program-card-item-btns">
+            <a href="#" class="btn orange-btn text-white program-btn width-300">Подать заявку на обучение</a>
+            <a href="#" class="btn yellow-btn text-white program-btn width-300">Расписание занятий</a>
+        </div>
+    </section>
+    <section class="section advantages">
+        <div class="advantages-text-wrapper">
+            <h2 class="section-title text-green mar-bottom-50">Почему обучение в&nbsp;Twinkle Kids — правильный
+                выбор:</h2>
+            <div class="accordions-container">
+                <div class="accordion-item">
+                    <img src="./images/arrow-icon.png" alt="Стрелка" class="accordion-arrow">
+                    <h4 class="accordion-header text-24">Уникальное пространство</h4>
+                    <p class="accordion-body">Развернутое описание на 250 символов… какой-то текст… какой-то текст…
+                        какой-то
+                        текст… какой-то текст… какой-то текст… какой-то текст… какой-то текст… какой-то текст…
+                        какой-то
+                        текст… какой-то текст… какой-то текст… какой-то текст… какой-то текст…</p>
+                </div>
+                <div class="accordion-item">
+                    <img src="./images/arrow-icon.png" alt="Стрелка" class="accordion-arrow">
+                    <h4 class="accordion-header text-24">Множество направлений обучения</h4>
+                    <p class="accordion-body">Развернутое описание на 250 символов… какой-то текст… какой-то текст…
+                        какой-то
+                        текст… какой-то текст… какой-то текст… какой-то текст… какой-то текст… какой-то текст…
+                        какой-то
+                        текст… какой-то текст… какой-то текст… какой-то текст… какой-то текст…</p>
+                </div>
+                <div class="accordion-item">
+                    <img src="./images/arrow-icon.png" alt="Стрелка" class="accordion-arrow">
+                    <h4 class="accordion-header text-24">Профессионализм преподавателей</h4>
+                    <p class="accordion-body">Развернутое описание на 250 символов… какой-то текст… какой-то текст…
+                        какой-то
+                        текст… какой-то текст… какой-то текст… какой-то текст… какой-то текст… какой-то текст…
+                        какой-то
+                        текст… какой-то текст… какой-то текст… какой-то текст… какой-то текст…</p>
+                </div>
+                <div class="accordion-item">
+                    <img src="./images/arrow-icon.png" alt="Стрелка" class="accordion-arrow">
+                    <h4 class="accordion-header text-24">Индивидуальный подход к вашему ребенку</h4>
+                    <p class="accordion-body">Развернутое описание на 250 символов… какой-то текст… какой-то текст…
+                        какой-то
+                        текст… какой-то текст… какой-то текст… какой-то текст… какой-то текст… какой-то текст…
+                        какой-то
+                        текст… какой-то текст… какой-то текст… какой-то текст… какой-то текст…</p>
+                </div>
+                <div class="accordion-item">
+                    <img src="./images/arrow-icon.png" alt="Стрелка" class="accordion-arrow">
+                    <h4 class="accordion-header text-24">Удобное расписание занятий</h4>
+                    <p class="accordion-body">Развернутое описание на 250 символов… какой-то текст… какой-то текст…
+                        какой-то
+                        текст… какой-то текст… какой-то текст… какой-то текст… какой-то текст… какой-то текст…
+                        какой-то
+                        текст… какой-то текст… какой-то текст… какой-то текст… какой-то текст…</p>
+                </div>
+            </div>
+        </div>
+        <div class="advantages-img radius-50">
+            <img src="./images/accord-img.png" alt="Учебный класс">
+        </div>
+    </section>
+    <section class="section form radius-50 text-white">
+        <h2 class="section-title mar-bottom-68">Подать заявку на обучение</h2>
+        <div class="form-wrapper">
+            <div class="form-col-text">
+                <p class="text-20">Набор на 2024-2025 учебный год уже идет — заполните форму, и мы свяжемся с вами
+                    для
+                    уточнения
+                    деталей:</p>
+                <img src="./images/form-img.png" alt="Цветные буквы с глазами" class="form-img">
+            </div>
+            <form class="form-col-form">
+                <div class="input-row">
+                    <input type="text" name="name" class="form-input" placeholder="Ваше имя">
+                    <input type="text" name="surname" class="form-input" placeholder="Ваша фамилия">
+                </div>
+                <div class="input-row">
+                    <input class="form-input" name="childs-name" type="text" placeholder="Имя ребенка">
+                    <input type="text" name="childs-surname" class="form-input" placeholder="Фамилия ребенка">
+                </div>
+                <div class="input-row">
+                    <input type="tel" name="tel" class="form-input" placeholder="+7 (911) 111-11-11">
+                    <input type="text" name="email" class="form-input" placeholder="Email">
+                </div>
+                <div class="input-row radio-row">
+                    <div class="input-column">
+                        <label class="input-row form_radio">Вариант radiobox1
+                            <input type="radio" checked="checked" name="radio" class="radio-input">
+                            <span class="checkmark-radio"></span>
+                        </label>
+                        <label class="input-row form_radio">Вариант radiobox2
+                            <input type="radio" name="radio" class="radio-input">
+                            <span class="checkmark-radio"></span>
+                        </label>
+                        <label class="input-row form_radio">Вариант radiobox3
+                            <input type="radio" name="radio" class="radio-input">
+                            <span class="checkmark-radio"></span>
+                        </label>
+                    </div>
+                    <div class="custom-select">
+                        <div class="select-button" role="combobox" aria-labelledby="select button"
+                             aria-haspopup="listbox" aria-expanded="false" aria-controls="select-dropdown">
+                            <span class="selected-value">Выпадающий список</span>
+                        </div>
+                        <ul class="select-dropdown" role="listbox" id="select-dropdown">
+                            <li role="option">
+                                <input type="radio" id="1" name="select"/>
+                                <label for="1">Вариант 1</label>
+                            </li>
+                            <li role="option">
+                                <input type="radio" id="2" name="select"/>
+                                <label for="2">Вариант 2</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="input-row textarea-wrapper">
+                        <textarea type="text" name="text" rows="3" class="form-input"
+                                  placeholder="Комментарий textarea"></textarea>
+                </div>
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" class="form-checkbox" checked>
+                    Я соглашаюсь с <a class="checkbox-link" href="/" target="_blank">политикой
+                    обработки персональных данных</a> и принимаю <a class="checkbox-link" href="/"
+                                                                    target="_blank">условия
+                    пользовательского соглашения</a>
+                    <span class="checkmark"></span>
+                </label>
+                <button type="submit" href="/" class="btn white-btn form-btn">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer-row footer-row-mob">
+        <a href="./index.html"><img class="logo" src="./images/logo.png" alt="Логотип"></a>
+        <ul class="footer-contacts">
+            <li class="footer-contacts-item"><a href="/" class="text-24 text-orange">+7
+                &nbsp;(495)&nbsp;431-53-17</a>
+            </li>
+            <li class="footer-contacts-item"><a href="/" class="text-20 text-blue">info@twinkle-kids.ru</a></li>
+        </ul>
+        <ul class="menu-footer">
+            <li><a class="menu-footer-link text-20 text-blue">О Центре</a></li>
+            <li><a href="./programs.html" class="menu-footer-link text-20 text-blue">Образование</a></li>
+            <li><a class="menu-footer-link text-20 text-blue">Расписание</a></li>
+            <li><a class="menu-footer-link text-20 text-blue">Команда</a></li>
+            <li><a class="menu-footer-link text-20 text-blue">Контакты</a></li>
+            <li><a class="menu-footer-link text-20 text-blue">Соглашения</a></li>
+        </ul>
+    </div>
+    <div class="footer-row">
+        <h3 class="company text-blue">ООО «ТВИНКЛ КИДС» г.&nbsp;Москва, 2024 год</h3>
+        <div class="designedby">
+            <p class="text-blue">Разработка сайта:</p>
+            <img src="./images/logo-company.png" alt="Лого дизайн-студии">
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

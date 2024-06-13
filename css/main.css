@@ -779,13 +779,41 @@ textarea.form-input {
     width: 300px;
 }
 
-.selection-form {
+/*-----filter-----*/
+.filter {
     background-color: #5FA068;
     display: flex;
     align-items: center;
-    padding: 1.563rem 0;
+    padding-block: 1.563rem;
 }
-
-.select-button__bottom {
+.filter-form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.custom-select-filter {
+    width: unset;
+}
+.custom-select-filter>.select-button{
     border-bottom: 1px solid #FFFFFF;
+    padding: 0.5rem;
+}
+.custom-select-filter, .filter-btn{
+    min-width: 140px;
+    flex: 0 1 14.5%;
+}
+.custom-select-filter>.select-button::after{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.custom-select-filter.active>.select-button::after{
+    transform: translateY(-50%) rotate(180deg);
+}
+.custom-select-filter>.select-dropdown{
+    background-color: #5FA068;
+    border-radius: 8px;
+    z-index: 1;
 }

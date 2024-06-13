@@ -82,17 +82,19 @@ closeBtn.addEventListener('click', () => {
 
 //выпадающий список
 
-const customSelect = document.querySelector(".custom-select");
-const selectBtn = document.querySelector(".select-button");
+const customSelect = document.querySelectorAll(".custom-select");
+for (let i = 0; i < customSelect.length; i++) {
+    const el = customSelect[i];
+const selectBtn = el.querySelector(".select-button");
 
-const selectedValue = document.querySelector(".selected-value");
-const optionsList = document.querySelectorAll(".select-dropdown li");
+const selectedValue = el.querySelector(".selected-value");
+const optionsList = el.querySelectorAll(".select-dropdown li");
 
 // add click event to select button
 selectBtn.addEventListener("click", () => {
     // preventDefault();
   // add/remove active class on the container element
-  customSelect.classList.toggle("active");
+  el.classList.toggle("active");
   // update the aria-expanded attribute based on the current state
   selectBtn.setAttribute(
     "aria-expanded",
@@ -105,15 +107,16 @@ optionsList.forEach((option) => {
     // Click Events
     if (e.type === "click" && e.clientX !== 0 && e.clientY !== 0) {
       selectedValue.textContent = this.children[1].textContent;
-      customSelect.classList.remove("active");
+      el.classList.remove("active");
     }
     // Key Events
     if (e.key === "Enter") {
       selectedValue.textContent = this.textContent;
-      customSelect.classList.remove("active");
+      el.classList.remove("active");
     }
   }
 
   option.addEventListener("keyup", handler);
   option.addEventListener("click", handler);
 });
+}
