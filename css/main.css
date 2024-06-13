@@ -778,3 +778,14 @@ textarea.form-input {
 .width-300 {
     width: 300px;
 }
+
+.selection-form {
+    background-color: #5FA068;
+    display: flex;
+    align-items: center;
+    padding: 1.563rem 0;
+}
+
+.select-button__bottom {
+    border-bottom: 1px solid #FFFFFF;
+}
