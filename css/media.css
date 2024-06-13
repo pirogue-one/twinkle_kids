@@ -350,11 +350,28 @@
 
     .team-cards {
         padding-block: 2.5rem;
-        gap: 2rem
+        gap: 2rem 1.5rem;
+    }
+    .team-card-container{
+        gap: 1rem;
     }
 
     .team-card {
         padding: 0;
+        gap: 1rem;
+        flex: 0 1 45%;
+    }
+    .team-card-header,
+    .text-16 {
+        font-size: 0.875rem;
+    }
+    .team-img {
+        max-width: unset;
+        width: 100%;
+    }
+    .team-btn{
+        padding-inline: 0;
+        width: 100%;
     }
 }
 
