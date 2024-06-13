@@ -255,6 +255,10 @@
     .designedby p {
         max-width: 70px;
     }
+
+    .team-cards {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 376px) {
