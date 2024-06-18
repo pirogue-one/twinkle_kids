@@ -1037,3 +1037,62 @@ textarea.form-input {
     max-width: 60px;
 }
 
+/*********** СПЕЦИАЛИСТ ************/
+
+.column-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.438rem;
+}
+
+.text-500 {
+    font-weight: 500;
+}
+
+.info-text-width {
+    max-width: 181px;
+}
+
+.row-cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/*********** ПРОГРАММА ************/
+
+.class-cards {
+    display: flex;
+    gap: 1.938rem;
+}
+
+.class-card-column {
+    display: flex;
+    flex-direction: column;
+    gap: 3.688rem;
+}
+
+.teacher-row {
+    display: flex;
+    gap: 2rem;
+}
+
+.number-container {
+    position: relative;
+}
+
+.number {
+    position: absolute;
+    color: #F6988F4D;
+    right: 0%;
+    top: 32%;
+    font-family: "Play", sans-serif;
+    font-size: 6.25rem;
+    font-weight: 700;
+}
+
+.about-teacher {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

@@ -122,8 +122,7 @@
         align-items: center;
     }
 
-    .company,
-    .text-blue {
+    .company > .text-blue {
         font-size: 0.8rem;
     }
 
@@ -175,6 +174,14 @@
     .docs-button-next,
     .partners-button-next {
         padding-left: 1.5rem;
+    }
+
+    .teacher-row {
+        flex-direction: column;
+    }
+
+    .about-teacher {
+        gap: 1rem;
     }
 }
 
