@@ -41,6 +41,9 @@
         height: unset !important;
         padding-inline: 20px;
     }
+    .program-descr {
+        gap: 2.5rem;
+    }
 }
 
 
@@ -182,6 +185,34 @@
 
     .about-teacher {
         gap: 1rem;
+    }
+    .program-descr>img {
+        display: none;
+    }
+    .program-page .row-cards {
+        flex-wrap: wrap;
+        gap: 2.5rem;
+    }
+    .program-page .column-container {
+        flex: 0 1 40%;
+        gap: 1rem;
+    }
+    .class-cards {
+        flex-direction: column;
+        gap: 2.75rem;
+        padding-bottom: 5rem;
+    }
+    .class-card-column {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+    .number {
+        top: -24px;
+    }
+    .teacher-page {
+        flex-direction: column-reverse;
+        gap: 2rem;
     }
 }
 
@@ -379,6 +410,18 @@
     .team-btn{
         padding-inline: 0;
         width: 100%;
+    }
+    .number {
+        top: -18px;
+    }
+    .teacher-page .row-cards {
+        gap: 2.5rem;
+        flex-wrap: wrap;
+
+    }
+    .teacher-page .column-container {
+        flex: 0 1 42%;
+        gap: 1rem
     }
 }
 

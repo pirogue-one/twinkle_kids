@@ -1058,14 +1058,58 @@ textarea.form-input {
     width: 100%;
     justify-content: space-between;
 }
+.teacher-page {
+    padding-block: 5rem 2.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 3.875rem;
+}
+.teacher-page .column-container {
+    flex: 0 1 30%;
+}
 
 /*********** ПРОГРАММА ************/
+.program-page {
+    display: flex;
+    flex-direction: column;
+    padding-block: 3rem 2.5rem;
+}
+.program-descr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 9.125rem;
+}
+.program-descr>.about-text-wrapper {
+    flex-grow: 0;
+}
 
+.program-descr img {
+    width: 195px;
+}
+.span-new-line {
+    display: block;
+}
+.program-page .column-container {
+    flex: 0 1 22%;
+}
+.program-page .btn {
+    align-self: center;
+}
+.class-process {
+    padding-block: 2.5rem;
+}
 .class-cards {
     display: flex;
     gap: 1.938rem;
+    padding-bottom: 5rem;
 }
-
+.class-process-addition{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.25rem;
+}
 .class-card-column {
     display: flex;
     flex-direction: column;
@@ -1084,10 +1128,11 @@ textarea.form-input {
 .number {
     position: absolute;
     color: #F6988F4D;
-    right: 0%;
-    top: 32%;
+    right: 0;
+    top: -40px;
     font-family: "Play", sans-serif;
     font-size: 6.25rem;
+    line-height: 80%;
     font-weight: 700;
 }
 
@@ -1095,4 +1140,7 @@ textarea.form-input {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.addition-programs{
+    padding-block: 2.5rem 5rem;
 }
