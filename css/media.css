@@ -41,6 +41,7 @@
         height: unset !important;
         padding-inline: 20px;
     }
+
     .program-descr {
         gap: 2.5rem;
     }
@@ -57,7 +58,7 @@
         display: flex;
     }
 
-    #menu-burger > img {
+    #menu-burger>img {
         width: 30px;
     }
 
@@ -125,7 +126,7 @@
         align-items: center;
     }
 
-    .company > .text-blue {
+    .company>.text-blue {
         font-size: 0.8rem;
     }
 
@@ -186,30 +187,37 @@
     .about-teacher {
         gap: 1rem;
     }
+
     .program-descr>img {
         display: none;
     }
+
     .program-page .row-cards {
         flex-wrap: wrap;
         gap: 2.5rem;
     }
+
     .program-page .column-container {
         flex: 0 1 40%;
         gap: 1rem;
     }
+
     .class-cards {
         flex-direction: column;
         gap: 2.75rem;
         padding-bottom: 5rem;
     }
+
     .class-card-column {
         display: flex;
         flex-direction: column;
         gap: 1.25rem;
     }
+
     .number {
         top: -24px;
     }
+
     .teacher-page {
         flex-direction: column-reverse;
         gap: 2rem;
@@ -343,22 +351,23 @@
         justify-content: center;
     }
 
-    .custom-select-filter, .filter-form > .filter-btn {
+    .custom-select-filter,
+    .filter-form>.filter-btn {
         flex: 0 1 12%;
         max-width: 110px;
         min-width: 95px;
     }
 
-    .custom-select-filter > .select-button {
+    .custom-select-filter>.select-button {
         padding: 0.25rem;
         font-size: 0.75rem;
     }
 
-    .custom-select-filter > .select-button::after {
+    .custom-select-filter>.select-button::after {
         font-size: 1rem;
     }
 
-    .custom-select-filter > .select-dropdown {
+    .custom-select-filter>.select-dropdown {
         font-size: 0.75rem;
     }
 
@@ -374,7 +383,10 @@
         padding-inline: 10px;
     }
 
-    .docs-button-next > img, .docs-button-prev > img, .partners-button-next > img, .partners-button-prev > img {
+    .docs-button-next>img,
+    .docs-button-prev>img,
+    .partners-button-next>img,
+    .partners-button-prev>img {
         width: 20px
     }
 
@@ -382,7 +394,7 @@
         flex-direction: column;
     }
 
-    .about-page > img {
+    .about-page>img {
         padding-top: unset;
     }
 
@@ -390,7 +402,8 @@
         padding-block: 2.5rem;
         gap: 2rem 1.5rem;
     }
-    .team-card-container{
+
+    .team-card-container {
         gap: 1rem;
     }
 
@@ -399,29 +412,41 @@
         gap: 1rem;
         flex: 0 1 45%;
     }
+
     .team-card-header,
     .text-16 {
         font-size: 0.875rem;
     }
+
     .team-img {
         max-width: unset;
         width: 100%;
     }
-    .team-btn{
+
+    .team-btn {
         padding-inline: 0;
         width: 100%;
     }
+
     .number {
         top: -18px;
     }
+
     .teacher-page .row-cards {
         gap: 2.5rem;
         flex-wrap: wrap;
 
     }
+
     .teacher-page .column-container {
         flex: 0 1 42%;
         gap: 1rem
+    }
+
+    .hero-bg {
+        height: 0;
+        width: 100%;
+        padding-bottom: 100%;
     }
 }
 
@@ -432,6 +457,10 @@
 
     .text-24 {
         font-size: 1rem;
+    }
+
+    .hero {
+        padding-block: 2rem 0.375rem;
     }
 
 }
